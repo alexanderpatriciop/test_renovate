@@ -1,0 +1,34 @@
+{
+    "name": "xander/test_renovate",
+    "description": "Test renovate",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "drupal/entity_embed_link": "^2.0.1",
+        "drupal/entity_usage": "2.0.0-beta12@beta"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform": {
+            "php": "8.2"
+        },
+        "allow-plugins": {}
+    },
+    "autoload": {},
+    "autoload-dev": {},
+    "extra": {},
+    "composer-version": "^2.10",
+    "scripts": {}
+}
