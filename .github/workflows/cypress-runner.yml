@@ -1,0 +1,25 @@
+name: Cypress test runners example
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      reference:
+        description: 'Reference (a commit hash, a branch, or tag):'
+        required: true
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  Cypress-test-runners-example:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+          echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+          
+          # Sleep for 1 minute
+          sleep 60s
