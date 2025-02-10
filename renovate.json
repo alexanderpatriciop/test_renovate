@@ -11,6 +11,7 @@
     "group:symfony",
     "schedule:automergeWeekends"
   ],
+  "platformAutomerge": false,
   "labels": [
     "renovate"
   ],
