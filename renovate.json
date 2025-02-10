@@ -9,7 +9,7 @@
     ":timezone(America/New_York)",
     "config:recommended",
     "group:symfony",
-    "schedule:automergeWeekends"
+    "schedule:automergeWeekdays"
   ],
   "labels": [
     "renovate"
