@@ -176,3 +176,4 @@ drush.yml
 /.twig-cs-fixer.dist.php
 /phpcs.xml.dist
 /phpstan.neon.dist
+config.js
