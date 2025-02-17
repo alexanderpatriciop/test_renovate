@@ -1,5 +1,7 @@
 # Test Renovate
 
+Modifying readme only for test.
+
 ## Self-Hosting Examples
 * See: https://docs.renovatebot.com/examples/self-hosting/
 
