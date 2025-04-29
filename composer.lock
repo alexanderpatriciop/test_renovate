@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbd91da2139b9e9bc048fdd24bed7480",
+    "content-hash": "4a1674d123981bd6fbbceb9b3c731061",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -508,20 +508,20 @@
         },
         {
             "name": "drupal/embed",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/embed.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "e6b4875e2b245ddf1a68a8615cbb4c5a378a0e9f"
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "4ac5be0c3a421851c9c60ed82e3bc497be88e61c"
             },
             "require": {
-                "drupal/core": "^9.5 | ^10"
+                "drupal/core": "^10.2 || ^11"
             },
             "require-dev": {
                 "drupal/ckeditor": "^1.0"
@@ -529,8 +529,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1723283819",
+                    "version": "8.x-1.10",
+                    "datestamp": "1737663032",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -551,7 +551,7 @@
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
-                    "name": "Devin Carlson",
+                    "name": "devin carlson",
                     "homepage": "https://www.drupal.org/user/290182"
                 },
                 {
@@ -575,31 +575,30 @@
         },
         {
             "name": "drupal/entity_embed",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_embed.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "9c65a87f4285dc47303783db2e3af5825164d1dc"
+                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "64b7226390198572cdea0dd2227585f74338c773"
             },
             "require": {
-                "drupal/core": "^9.5 || ^10",
-                "drupal/embed": "^1.7"
+                "drupal/core": "^10.3 || ^11",
+                "drupal/embed": "^1.10"
             },
             "require-dev": {
-                "drupal/ckeditor": "^1",
-                "drupal/entity_browser": "^2.2"
+                "drupal/entity_browser": "^2.11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1712587671",
+                    "version": "8.x-1.7",
+                    "datestamp": "1738512139",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -616,11 +615,11 @@
                     "homepage": "https://www.drupal.org/user/2828287"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
-                    "name": "Devin Carlson",
+                    "name": "devin carlson",
                     "homepage": "https://www.drupal.org/user/290182"
                 },
                 {
@@ -640,7 +639,7 @@
                     "homepage": "https://www.drupal.org/user/744628"
                 },
                 {
-                    "name": "Wim Leers",
+                    "name": "wim leers",
                     "homepage": "https://www.drupal.org/user/99777"
                 }
             ],
@@ -652,17 +651,17 @@
         },
         {
             "name": "drupal/entity_embed_link",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_embed_link.git",
-                "reference": "2.0.1"
+                "reference": "2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_embed_link-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "4d79a09209c96893929dad3476fbde5014dafadd"
+                "url": "https://ftp.drupal.org/files/projects/entity_embed_link-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "e4af23149dd09926f6ee41686c0622a9e5970e73"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -671,8 +670,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1659462656",
+                    "version": "2.0.2",
+                    "datestamp": "1709948095",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -698,6 +697,10 @@
                     "name": "Azz-eddine BERRAMOU (berramou)",
                     "homepage": "https://www.drupal.org/u/berramou",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "Webbeh",
+                    "homepage": "https://www.drupal.org/user/1160608"
                 }
             ],
             "description": "Allows embedded entities to link to arbitrary URLs.",
