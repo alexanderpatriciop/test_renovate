@@ -1,12 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranches": [
+  "baseBranchPatterns": [
     "renovate-updates",
     "main"
   ],
   "osvVulnerabilityAlerts": true,
   "vulnerabilityAlerts": {
     "enabled": true,
+    "baseBranchPatterns": [
+      "renovate-updates",
+      "main"
+    ],
     "packageRules": [
       {
         "matchBaseBranches": ["main"],
