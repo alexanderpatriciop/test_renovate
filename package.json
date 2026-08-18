@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "pnpm": "^10.34.5",
-    "renovate": "^39.264.1",
+    "renovate": "^44.33.2",
     "yarn": "^1.22.22"
   }
 }
