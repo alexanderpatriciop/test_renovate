@@ -5,9 +5,16 @@
 
 - Install:
 
+  First, ensure you are running the correct Node.js version (Node 24+ is required by the latest Renovate). If you use `nvm`, you can load it by running:
+  ```bash
+  nvm install
+  nvm use
   ```
-  npm install renovate
-  npm install yarn pnpm
+
+  Then install the dependencies:
+  ```bash
+  npm install
+  npm install -g yarn pnpm
   ```
 
 ## Run renovate locally
