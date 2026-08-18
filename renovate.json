@@ -11,14 +11,18 @@
       {
         "matchBaseBranches": ["main"],
         "matchCurrentValue": "/.*/",
-        "dependencyDashboardApproval": true,
-        "automerge": false,
+        "force": {
+          "dependencyDashboardApproval": true,
+          "automerge": false
+        },
         "addLabels": ["security-hotfix"]
       },
       {
         "matchBaseBranches": ["renovate-updates"],
         "matchCurrentValue": "/.*/",
-        "dependencyDashboardApproval": false,
+        "force": {
+          "dependencyDashboardApproval": false
+        },
         "addLabels": ["security-hotfix"]
       }
     ]
