@@ -7,7 +7,19 @@
   "osvVulnerabilityAlerts": true,
   "vulnerabilityAlerts": {
     "enabled": true,
-    "dependencyDashboardApproval": true
+    "packageRules": [
+      {
+        "matchBaseBranches": ["main"],
+        "dependencyDashboardApproval": true,
+        "automerge": false,
+        "addLabels": ["security-hotfix"]
+      },
+      {
+        "matchBaseBranches": ["renovate-updates"],
+        "dependencyDashboardApproval": false,
+        "addLabels": ["security-hotfix"]
+      }
+    ]
   },
   "extends": [
     ":automergeDisabled",
@@ -101,13 +113,7 @@
       "matchBaseBranches": [
         "main"
       ],
-      "enabled": false,
-      "vulnerabilityAlerts": {
-        "automerge": false,
-        "addLabels": [
-          "security-hotfix"
-        ]
-      }
+      "enabled": false
     }
   ],
   "platform": "github",
