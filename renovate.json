@@ -101,11 +101,13 @@
         "main"
       ],
       "enabled": false,
-      "dependencyDashboardApproval": true,
-      "automerge": false,
-      "addLabels": [
-        "security-hotfix"
-      ]
+      "vulnerabilityAlerts": {
+        "dependencyDashboardApproval": true,
+        "automerge": false,
+        "addLabels": [
+          "security-hotfix"
+        ]
+      }
     }
   ],
   "platform": "github",

@@ -1,0 +1,11 @@
+{
+  "baseBranches": ["main"],
+  "packageRules": [
+    {
+      "matchBaseBranches": ["main"],
+      "vulnerabilityAlerts": {
+        "dependencyDashboardApproval": true
+      }
+    }
+  ]
+}
