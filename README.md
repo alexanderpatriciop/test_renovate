@@ -20,7 +20,7 @@ Run renovate locally in dry-run mode to see what it would do without affecting t
   ```bash
   npm run renovate:local
   ```
-  *(or manually: `LOG_LEVEL=debug npx renovate --platform=local --repository-cache=reset --dry-run=full`)*
+  *(or manually: `set -a; . ./.env; set +a; LOG_LEVEL=debug npx renovate --platform=local --dry-run=full`)*
 
   > **Note**: To save the output report to a file, you can run:
   > `npm run renovate:local > renovate-report.log 2>&1`
@@ -42,4 +42,4 @@ Run renovate locally but execute against the GitHub repository to create/update 
   ```bash
   npm run renovate:github
   ```
-  *(or manually: `set -a; . ./.env; set +a; LOG_LEVEL=debug npx renovate alexanderpatriciop/test_renovate`)*
+  *(or manually: `set -a; . ./.env; set +a; LOG_LEVEL=debug npx renovate`)*
