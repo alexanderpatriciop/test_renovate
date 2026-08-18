@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "renovate:local": "LOG_LEVEL=debug npx renovate --platform=local --repository-cache=reset --dry-run=full",
+    "renovate:github": "set -a; . ./.env; set +a; LOG_LEVEL=debug npx renovate alexanderpatriciop/test_renovate"
+  },
+  "dependencies": {
+    "pnpm": "^10.34.5",
+    "renovate": "^39.264.1",
+    "yarn": "^1.22.22"
+  }
+}
