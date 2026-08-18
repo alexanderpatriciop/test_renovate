@@ -117,7 +117,8 @@
     }
   ],
   "platform": "github",
-  "prConcurrentLimit": 3,
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 0,
   "rangeStrategy": "bump",
   "rebaseWhen": "auto"
 }
