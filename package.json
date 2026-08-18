@@ -4,7 +4,7 @@
     "renovate:github": "set -a; . ./.env; set +a; LOG_LEVEL=debug npx renovate"
   },
   "dependencies": {
-    "pnpm": "^10.34.5",
+    "pnpm": "^11.22.0",
     "renovate": "^44.33.2",
     "yarn": "^1.22.22"
   }
