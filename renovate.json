@@ -6,7 +6,8 @@
   ],
   "osvVulnerabilityAlerts": true,
   "vulnerabilityAlerts": {
-    "enabled": true
+    "enabled": true,
+    "dependencyDashboardApproval": true
   },
   "extends": [
     ":automergeDisabled",
@@ -102,7 +103,6 @@
       ],
       "enabled": false,
       "vulnerabilityAlerts": {
-        "dependencyDashboardApproval": true,
         "automerge": false,
         "addLabels": [
           "security-hotfix"
