@@ -50,3 +50,16 @@ Run renovate locally but execute against the GitHub repository to create/update 
   npm run renovate:github
   ```
   *(or manually: `set -a; . ./.env; set +a; LOG_LEVEL=debug npx renovate`)*
+
+## Resetting Renovate State (Troubleshooting)
+
+If Renovate creates a PR that you did not want, simply closing it is not enough. Renovate will remember the closed PR, assume you rejected the update, and place it under the "Ignored or Blocked" section of the Dependency Dashboard. 
+
+To completely wipe Renovate's memory of a PR so you can re-test your configuration freshly (e.g., to have it show up as an unchecked box on the dashboard again), follow these steps:
+
+1. **Close the PR** on GitHub.
+2. **Delete the branch** that Renovate created (e.g., `renovate/drupal-core-10.x`).
+3. **Rename the closed PR title**: Add a prefix like `[CLOSED]` or `[ABANDONED]` to the beginning of the title.
+   *Example:* Change `Update dependency drupal/core to v10.6.13` ➡️ `[CLOSED] Update dependency drupal/core to v10.6.13`.
+
+*Why it works: Renovate searches past PRs using the exact PR title. By changing the title on GitHub, Renovate fails to find it in its history and will treat the update as completely new the next time you run `npm run renovate:github`.*
