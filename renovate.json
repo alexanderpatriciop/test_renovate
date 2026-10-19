@@ -7,13 +7,9 @@
   "osvVulnerabilityAlerts": true,
   "vulnerabilityAlerts": {
     "enabled": true,
-    "baseBranchPatterns": [
-      "renovate-updates",
-      "main"
-    ],
     "packageRules": [
       {
-        "matchBaseBranches": ["main"],
+        "matchJsonata": ["baseBranch = 'main'"],
         "matchCurrentValue": "/.*/",
         "force": {
           "dependencyDashboardApproval": true,
@@ -22,7 +18,7 @@
         "addLabels": ["security-hotfix"]
       },
       {
-        "matchBaseBranches": ["renovate-updates"],
+        "matchJsonata": ["baseBranch = 'renovate-updates'"],
         "matchCurrentValue": "/.*/",
         "force": {
           "dependencyDashboardApproval": false

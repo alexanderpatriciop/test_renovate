@@ -1,7 +1,8 @@
 {
   "scripts": {
     "renovate:local": "set -a; . ./.env; set +a; LOG_LEVEL=debug npx renovate --platform=local --dry-run=full",
-    "renovate:github": "set -a; . ./.env; set +a; LOG_LEVEL=debug npx renovate"
+    "renovate:github": "set -a; . ./.env; set +a; LOG_LEVEL=debug npx renovate",
+    "renovate:validate": "npx --yes --package renovate@latest -c \"renovate-config-validator --strict renovate.json\""
   },
   "dependencies": {
     "pnpm": "^10.34.5",
