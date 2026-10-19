@@ -12,7 +12,7 @@
         "drupal/core": "^10.6.9",
         "drupal/entity_embed_link": "^2.0.1",
         "drupal/entity_usage": "2.0.0-beta12@beta",
-        "drupal/search_api_autocomplete": "^1.10.0"
+        "drupal/search_api_autocomplete": "^1.12.0"
     },
     "conflict": {
         "drupal/drupal": "*"
